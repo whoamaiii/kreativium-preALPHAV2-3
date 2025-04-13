@@ -1,0 +1,79 @@
+{
+  "common": {
+    "next": "Neste",
+    "back": "Tilbake",
+    "close": "Lukk",
+    "save": "Lagre",
+    "cancel": "Avbryt",
+    "loading": "Laster...",
+    "previous": "Forrige",
+    "complete": "Fullfør",
+    "exit": "Avslutt",
+    "tryAgain": "Prøv igjen",
+    "backToHome": "Tilbake til hovedsiden"
+  },
+  "game": {
+    "title": "Ask123 - Tegn til Tale",
+    "start": "Start Spillet",
+    "score": "Poeng",
+    "level": "Nivå",
+    "streak": "Streak",
+    "experience": "Erfaring",
+    "correct": "Riktig!",
+    "incorrect": "Prøv igjen!",
+    "hint": "Vis hint",
+    "hideHint": "Skjul hint",
+    "explanation": "Forklaring:"
+  },
+  "settings": {
+    "title": "Innstillinger",
+    "sound": "Lyd",
+    "theme": "Tema",
+    "language": "Språk",
+    "difficulty": "Vanskelighetsgrad",
+    "light": "Lyst",
+    "dark": "Mørkt"
+  },
+  "categories": {
+    "colors": "Farger",
+    "animals": "Dyr",
+    "daily": "Daglige Uttrykk"
+  },
+  "quiz": {
+    "title": "Tegnspråk Quiz",
+    "subtitle": "Test din kunnskap i tegnspråk",
+    "question": "Spørsmål",
+    "of": "av",
+    "complete": "Quiz Fullført!",
+    "result": "Her er resultatene dine",
+    "totalScore": "Total Score",
+    "accuracy": "Nøyaktighet",
+    "correctAnswers": "Riktige Svar",
+    "timeTaken": "Tid Brukt",
+    "yourLevel": "Ditt Nivå",
+    "tryAnother": "Prøv en annen kategori",
+    "levels": {
+      "beginner": "Nybegynner",
+      "intermediate": "Middels",
+      "advanced": "Avansert",
+      "expert": "Ekspert"
+    },
+    "multiplier": "poeng",
+    "nextQuestion": "Neste Spørsmål",
+    "completeQuiz": "Fullfør Quiz"
+  },
+  "memory": {
+    "title": "Tegnspråk Memoryspill",
+    "subtitle": "Finn par for å teste hukommelsen din",
+    "findPairs": "Finn parene",
+    "pairsFound": "Par funnet",
+    "timeElapsed": "Tid brukt",
+    "moves": "Trekk",
+    "score": "Poeng",
+    "complete": "Spill fullført!",
+    "result": "Endelige resultater",
+    "tryAgain": "Prøv igjen",
+    "backToCategories": "Tilbake til kategorier",
+    "noQuestions": "Ingen spørsmål tilgjengelig for denne kategorien"
+  }
+}

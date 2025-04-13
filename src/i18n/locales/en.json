@@ -1,0 +1,133 @@
+{
+  "common": {
+    "next": "Next",
+    "back": "Back",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "loading": "Loading...",
+    "previous": "Previous",
+    "complete": "Complete",
+    "exit": "Exit",
+    "tryAgain": "Try Again",
+    "backToHome": "Back to Home",
+    "skip": "Skip",
+    "submit": "Submit",
+    "submitting": "Submitting..."
+  },
+  "game": {
+    "title": "Ask123 - Sign to Speech",
+    "start": "Start Game",
+    "score": "Score",
+    "level": "Level",
+    "streak": "Streak",
+    "experience": "Experience",
+    "correct": "Correct!",
+    "incorrect": "Try again!",
+    "hint": "Show hint",
+    "hideHint": "Hide hint",
+    "explanation": "Explanation:"
+  },
+  "settings": {
+    "title": "Settings",
+    "sound": "Sound",
+    "theme": "Theme",
+    "language": "Language",
+    "difficulty": "Difficulty",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "categories": {
+    "colors": "Colors",
+    "animals": "Animals",
+    "daily": "Daily Expressions"
+  },
+  "quiz": {
+    "title": "Sign Language Quiz",
+    "subtitle": "Test your knowledge of sign language",
+    "question": "Question",
+    "of": "of",
+    "complete": "Quiz Complete!",
+    "result": "Here's how you did",
+    "totalScore": "Total Score",
+    "accuracy": "Accuracy",
+    "correctAnswers": "Correct Answers",
+    "timeTaken": "Time Taken",
+    "yourLevel": "Your Level",
+    "tryAnother": "Try Another Category",
+    "levels": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced",
+      "expert": "Expert"
+    },
+    "multiplier": "points",
+    "nextQuestion": "Next Question",
+    "completeQuiz": "Complete Quiz",
+    "trackEmotions": "Let's track how you're feeling",
+    "emotionPerformance": "Your Emotional Performance",
+    "startingEmotion": "You started feeling"
+  },
+  "memory": {
+    "title": "Sign Language Memory Game",
+    "subtitle": "Match pairs to test your memory",
+    "findPairs": "Find pairs",
+    "pairsFound": "Pairs found",
+    "timeElapsed": "Time elapsed",
+    "moves": "Moves",
+    "score": "Score",
+    "complete": "Game Complete!",
+    "result": "Final Results",
+    "tryAgain": "Try Again",
+    "backToCategories": "Back to Categories",
+    "noQuestions": "No questions available for this category",
+    "totalMoves": "Total Moves",
+    "accuracy": "Accuracy",
+    "extraMoves": "Extra Moves",
+    "timeTaken": "Time Taken",
+    "yourLevel": "Your Level",
+    "levels": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced",
+      "expert": "Expert"
+    },
+    "trackEmotions": "Let's track how you're feeling",
+    "emotionPerformance": "Your Emotional Performance",
+    "startingEmotion": "You started feeling",
+    "beforeStarting": "Before we start the memory game...",
+    "errorSavingActivity": "There was an error saving your activity. Please try again.",
+    "savingActivity": "Saving activity..."
+  },
+  "emotionPrompt": {
+    "beforeActivity": "How are you feeling before this activity?",
+    "afterActivity": "How are you feeling after completing this activity?",
+    "addNote": "Add a note (optional)",
+    "notePlaceholder": "Why do you feel this way?",
+    "beforeQuiz": "How are you feeling before starting this quiz?",
+    "afterQuiz": "How are you feeling after completing this quiz?",
+    "afterQuizWithPrevious": "You felt {{emotion}} before starting. How are you feeling now after completing the quiz?",
+    "beforeMemoryGame": "How are you feeling before playing the memory game?",
+    "afterMemoryGame": "How are you feeling after completing the memory game?",
+    "afterMemoryGameWithPrevious": "You felt {{emotion}} before starting. How are you feeling now after completing the game?",
+    "errorLogging": "Failed to log emotion. Please try again."
+  },
+  "emotionCorrelation": {
+    "errorTitle": "Visualization Error",
+    "errorMessage": "There was an error displaying the emotion correlation visualization.",
+    "loading": "Loading correlation data...",
+    "loadError": "Failed to load correlation data: {{message}}",
+    "maxRetriesError": "Maximum retry attempts reached. Please try again later.",
+    "retryAttempt": "Retry attempt {{current}}/{{max}}"
+  },
+  "emotions": {
+    "happy": "Happy",
+    "sad": "Sad",
+    "anxious": "Anxious",
+    "angry": "Angry",
+    "calm": "Calm",
+    "excited": "Excited",
+    "tired": "Tired",
+    "frustrated": "Frustrated"
+  }
+}

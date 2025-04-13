@@ -1,0 +1,21 @@
+{
+  "name": "Ask123 - Tegn til Tale",
+  "short_name": "Ask123",
+  "description": "Lær tegnspråk gjennom et engasjerende spill",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6d28d9",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
