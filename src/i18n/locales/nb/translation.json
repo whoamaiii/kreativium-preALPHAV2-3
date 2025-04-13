@@ -1,0 +1,106 @@
+{
+  "app": {
+    "title": "Ask123"
+  },
+  "navigation": {
+    "home": "Hjem",
+    "quiz": "Quiz",
+    "memory": "Minne",
+    "settings": "Innstillinger",
+    "dictionary": "Ordbok",
+    "feelings": "Følelsesregistrering",
+    "kids": "Administrere Barn",
+    "ilp": "IOP",
+    "ilpManagement": "IOP Administrasjon",
+    "aac": "ASK"
+  },
+  "ilp": {
+    "title": "IOP - Individuell Opplæringsplan",
+    "management": "IOP Administrasjon",
+    "what_is": "Hva er en IOP?",
+    "description": "En Individuell Opplæringsplan (IOP) er en tilpasset utdanningsplan utformet for å hjelpe elever med å nå spesifikke læringsmål. Den definerer målrettede ferdigheter, foretrukne læringsaktiviteter og sporer fremgang mot målene.",
+    "features": "Funksjoner",
+    "features_list": {
+      "goals": "Lag personlige læringsmål",
+      "track": "Spor fremgang med visuelle indikatorer",
+      "recommendations": "Få aktivitetsanbefalinger basert på mål",
+      "reports": "Generer fremgangsrapporter",
+      "timeframes": "Sett tidsrammer for måloppnåelse"
+    },
+    "getting_started": "Kom i gang",
+    "getting_started_list": {
+      "select_child": "Velg et barn fra barnevelgeren",
+      "go_to_management": "Gå til IOP Administrasjon",
+      "create_first": "Lag din første opplæringsplan",
+      "start_activities": "Start anbefalte aktiviteter",
+      "monitor": "Overvåk fremgang på dashbordet"
+    },
+    "create": "Opprett ny opplæringsplan",
+    "edit": "Rediger opplæringsplan",
+    "back": "Tilbake til opplæringsplaner",
+    "no_ilp": "Opplæringsplan ikke funnet",
+    "error": "Feil",
+    "go_to_ilp_management": "Gå til IOP Administrasjon"
+  },
+  "goals": {
+    "title": "Mål",
+    "add": "Legg til mål",
+    "add_first": "Legg til ditt første mål",
+    "edit": "Rediger mål",
+    "no_goals": "Ingen mål er lagt til i denne opplæringsplanen ennå.",
+    "skill": "Ferdighet",
+    "description": "Beskrivelse",
+    "target_date": "Måldato",
+    "status": "Status",
+    "progress": "Fremgang",
+    "update_progress": "Oppdater fremgang",
+    "save_progress": "Lagre fremgang",
+    "saving": "Lagrer...",
+    "cancel": "Avbryt",
+    "notes": "Vurderingsnotater",
+    "last_updated": "Sist oppdatert",
+    "preferred_activities": "Foretrukne aktivitetstyper",
+    "activities_for": "Aktiviteter for \"{0}\"-målet",
+    "no_activities": "Ingen aktiviteter anbefalt for øyeblikket.",
+    "completed": "Alle aktiviteter for dette målet er fullført! 🎉",
+    "refresh": "Oppdater",
+    "list_view": "Listevisning",
+    "dashboard": "Dashbord",
+    "overall_progress": "Total fremgang",
+    "complete": "Fullført",
+    "add_new": "Legg til nytt mål",
+    "update": "Oppdater mål"
+  },
+  "activities": {
+    "start": "Start aktivitet",
+    "recording": "Tar opp...",
+    "skills": "Ferdigheter",
+    "completed": "Fullført {0} av {1} aktiviteter",
+    "try_again": "Prøv igjen"
+  },
+  "dashboard": {
+    "progress_by_skill": "Fremgang etter ferdighet",
+    "status_distribution": "Målstatusfordeling",
+    "not_enough_data": "Ikke nok data å vise diagrammer. Legg til flere mål for å se visualiseringer.",
+    "average_progress": "Gjennomsnittlig fremgang"
+  },
+  "status": {
+    "pending": "Venter",
+    "in_progress": "Pågående",
+    "completed": "Fullført"
+  },
+  "form": {
+    "optional": "Valgfritt",
+    "submit": "Send inn",
+    "submitting": "Sender inn..."
+  },
+  "skills": {
+    "reading": "Lesing",
+    "math": "Matematikk",
+    "social": "Sosiale ferdigheter",
+    "motor": "Motoriske ferdigheter",
+    "language": "Språk",
+    "cognitive": "Kognitive ferdigheter",
+    "emotional": "Emosjonell utvikling"
+  }
+} 

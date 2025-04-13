@@ -29,7 +29,7 @@ export const MainMenu: React.FC = () => {
     },
     {
       id: 'feelings-tracker',
-      title: 'Feelings Tracker',
+      title: 'Følelseslogg',
       description: 'Track emotions',
       icon: Heart,
       color: 'text-red-500',
@@ -37,7 +37,7 @@ export const MainMenu: React.FC = () => {
     },
     {
       id: 'kids',
-      title: 'Kids',
+      title: 'Barn',
       description: 'Manage kids',
       icon: Users,
       color: 'text-yellow-500',
@@ -45,7 +45,7 @@ export const MainMenu: React.FC = () => {
     },
     {
       id: 'ilp',
-      title: 'ILP',
+      title: 'IOP',
       description: 'Learning Plans',
       icon: Target,
       color: 'text-green-500',

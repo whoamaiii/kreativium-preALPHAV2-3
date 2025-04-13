@@ -1,0 +1,106 @@
+{
+  "app": {
+    "title": "Ask123"
+  },
+  "navigation": {
+    "home": "Home",
+    "quiz": "Quiz",
+    "memory": "Memory",
+    "settings": "Settings",
+    "dictionary": "Dictionary",
+    "feelings": "Feelings Tracker",
+    "kids": "Kids Management",
+    "ilp": "ILP",
+    "ilpManagement": "ILP Management",
+    "aac": "AAC"
+  },
+  "ilp": {
+    "title": "ILP - Individualized Learning Plan",
+    "management": "ILP Management",
+    "what_is": "What is an ILP?",
+    "description": "An Individualized Learning Plan (ILP) is a customized educational plan designed to help students reach specific learning goals. It defines target skills, preferred learning activities, and tracks progress towards goals.",
+    "features": "Features",
+    "features_list": {
+      "goals": "Create personalized learning goals",
+      "track": "Track progress with visual indicators",
+      "recommendations": "Get activity recommendations based on goals",
+      "reports": "Generate progress reports",
+      "timeframes": "Set timeframes for goal achievement"
+    },
+    "getting_started": "Getting Started",
+    "getting_started_list": {
+      "select_child": "Select a child from the kid selector",
+      "go_to_management": "Go to ILP Management",
+      "create_first": "Create your first learning plan",
+      "start_activities": "Start recommended activities",
+      "monitor": "Monitor progress on the dashboard"
+    },
+    "create": "Create New Learning Plan",
+    "edit": "Edit Learning Plan",
+    "back": "Back to Learning Plans",
+    "no_ilp": "Learning Plan not found",
+    "error": "Error",
+    "go_to_ilp_management": "Go to ILP Management"
+  },
+  "goals": {
+    "title": "Goals",
+    "add": "Add Goal",
+    "add_first": "Add Your First Goal",
+    "edit": "Edit Goal",
+    "no_goals": "No goals have been added to this learning plan yet.",
+    "skill": "Skill",
+    "description": "Description",
+    "target_date": "Target Date",
+    "status": "Status",
+    "progress": "Progress",
+    "update_progress": "Update Progress",
+    "save_progress": "Save Progress",
+    "saving": "Saving...",
+    "cancel": "Cancel",
+    "notes": "Assessment Notes",
+    "last_updated": "Last updated",
+    "preferred_activities": "Preferred Activity Types",
+    "activities_for": "Activities for \"{0}\" Goal",
+    "no_activities": "No activities recommended at this time.",
+    "completed": "All activities for this goal have been completed! 🎉",
+    "refresh": "Refresh",
+    "list_view": "List View",
+    "dashboard": "Dashboard",
+    "overall_progress": "Overall Progress",
+    "complete": "Complete",
+    "add_new": "Add New Goal",
+    "update": "Update Goal"
+  },
+  "activities": {
+    "start": "Start Activity",
+    "recording": "Recording...",
+    "skills": "Skills",
+    "completed": "Completed {0} of {1} activities",
+    "try_again": "Try Again"
+  },
+  "dashboard": {
+    "progress_by_skill": "Progress by Skill",
+    "status_distribution": "Goal Status Distribution",
+    "not_enough_data": "Not enough data to display charts. Add more goals to see visualizations.",
+    "average_progress": "Average Progress"
+  },
+  "status": {
+    "pending": "Pending",
+    "in_progress": "In Progress",
+    "completed": "Completed"
+  },
+  "form": {
+    "optional": "Optional",
+    "submit": "Submit",
+    "submitting": "Submitting..."
+  },
+  "skills": {
+    "reading": "Reading",
+    "math": "Math",
+    "social": "Social Skills",
+    "motor": "Motor Skills",
+    "language": "Language",
+    "cognitive": "Cognitive Skills",
+    "emotional": "Emotional Development"
+  }
+} 

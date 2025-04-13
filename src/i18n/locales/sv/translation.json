@@ -1,0 +1,106 @@
+{
+  "app": {
+    "title": "Ask123"
+  },
+  "navigation": {
+    "home": "Hem",
+    "quiz": "Quiz",
+    "memory": "Minne",
+    "settings": "Inställningar",
+    "dictionary": "Ordbok",
+    "feelings": "Känslokontroll",
+    "kids": "Hantera barn",
+    "ilp": "ILP",
+    "ilpManagement": "ILP-hantering",
+    "aac": "AAC"
+  },
+  "ilp": {
+    "title": "ILP - Individuell läroplan",
+    "management": "ILP-hantering",
+    "what_is": "Vad är en ILP?",
+    "description": "En Individuell läroplan (ILP) är en anpassad utbildningsplan utformad för att hjälpa elever att uppnå specifika inlärningsmål. Den definierar riktade färdigheter, föredragna inlärningsaktiviteter och spårar framsteg mot målen.",
+    "features": "Funktioner",
+    "features_list": {
+      "goals": "Skapa personliga inlärningsmål",
+      "track": "Spåra framsteg med visuella indikatorer",
+      "recommendations": "Få aktivitetsrekommendationer baserat på mål",
+      "reports": "Generera framsteggsrapporter",
+      "timeframes": "Sätt tidsramar för måluppfyllelse"
+    },
+    "getting_started": "Kom igång",
+    "getting_started_list": {
+      "select_child": "Välj ett barn från barnväljaren",
+      "go_to_management": "Gå till ILP-hantering",
+      "create_first": "Skapa din första läroplan",
+      "start_activities": "Starta rekommenderade aktiviteter",
+      "monitor": "Övervaka framsteg på instrumentpanelen"
+    },
+    "create": "Skapa ny läroplan",
+    "edit": "Redigera läroplan",
+    "back": "Tillbaka till läroplaner",
+    "no_ilp": "Läroplan hittades inte",
+    "error": "Fel",
+    "go_to_ilp_management": "Gå till ILP-hantering"
+  },
+  "goals": {
+    "title": "Mål",
+    "add": "Lägg till mål",
+    "add_first": "Lägg till ditt första mål",
+    "edit": "Redigera mål",
+    "no_goals": "Inga mål har lagts till i denna läroplan ännu.",
+    "skill": "Färdighet",
+    "description": "Beskrivning",
+    "target_date": "Måldatum",
+    "status": "Status",
+    "progress": "Framsteg",
+    "update_progress": "Uppdatera framsteg",
+    "save_progress": "Spara framsteg",
+    "saving": "Sparar...",
+    "cancel": "Avbryt",
+    "notes": "Utvärderingsanteckningar",
+    "last_updated": "Senast uppdaterad",
+    "preferred_activities": "Föredragna aktivitetstyper",
+    "activities_for": "Aktiviteter för \"{0}\"-målet",
+    "no_activities": "Inga aktiviteter rekommenderas för närvarande.",
+    "completed": "Alla aktiviteter för detta mål är slutförda! 🎉",
+    "refresh": "Uppdatera",
+    "list_view": "Listvy",
+    "dashboard": "Instrumentpanel",
+    "overall_progress": "Övergripande framsteg",
+    "complete": "Slutfört",
+    "add_new": "Lägg till nytt mål",
+    "update": "Uppdatera mål"
+  },
+  "activities": {
+    "start": "Starta aktivitet",
+    "recording": "Spelar in...",
+    "skills": "Färdigheter",
+    "completed": "{0} av {1} aktiviteter slutförda",
+    "try_again": "Försök igen"
+  },
+  "dashboard": {
+    "progress_by_skill": "Framsteg efter färdighet",
+    "status_distribution": "Målstatusfördelning",
+    "not_enough_data": "Inte tillräckligt med data för att visa diagram. Lägg till fler mål för att se visualiseringar.",
+    "average_progress": "Genomsnittligt framsteg"
+  },
+  "status": {
+    "pending": "Väntande",
+    "in_progress": "Pågående",
+    "completed": "Slutförd"
+  },
+  "form": {
+    "optional": "Valfritt",
+    "submit": "Skicka",
+    "submitting": "Skickar..."
+  },
+  "skills": {
+    "reading": "Läsning",
+    "math": "Matematik",
+    "social": "Sociala färdigheter",
+    "motor": "Motoriska färdigheter",
+    "language": "Språk",
+    "cognitive": "Kognitiva färdigheter",
+    "emotional": "Emotionell utveckling"
+  }
+} 

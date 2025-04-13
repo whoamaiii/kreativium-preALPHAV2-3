@@ -17,12 +17,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose })
   const languages = [
     { code: 'nb', name: 'Norsk' },
     { code: 'en', name: 'English' },
-  ];
-
-  const difficulties = [
-    { value: 'easy', label: 'Lett' },
-    { value: 'medium', label: 'Middels' },
-    { value: 'hard', label: 'Vanskelig' },
+    { code: 'es', name: 'Español' },
   ];
 
   if (!isOpen) return null;
@@ -110,29 +105,6 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose })
                 </option>
               ))}
             </select>
-          </div>
-
-          {/* Difficulty Settings */}
-          <div className="space-y-2">
-            <div className="flex items-center gap-2 mb-2">
-              <Gauge className="w-5 h-5 text-gray-600 dark:text-gray-400" />
-              <h3 className="font-semibold dark:text-white">Vanskelighetsgrad</h3>
-            </div>
-            <div className="grid grid-cols-3 gap-2">
-              {difficulties.map((diff) => (
-                <button
-                  key={diff.value}
-                  onClick={() => updateSettings({ difficulty: diff.value as any })}
-                  className={`p-2 rounded-lg text-center ${
-                    settings.difficulty === diff.value
-                      ? 'bg-purple-100 text-purple-600'
-                      : 'hover:bg-gray-100 dark:hover:bg-gray-700'
-                  }`}
-                >
-                  {diff.label}
-                </button>
-              ))}
-            </div>
           </div>
         </div>
 

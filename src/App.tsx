@@ -19,9 +19,15 @@ const FeelingsTracker = lazy(() => import('./pages/FeelingsTracker'));
 const KidsManagement = lazy(() => import('./pages/KidsManagement'));
 const ILP = lazy(() => import('./pages/ILP'));
 const ILPManagement = lazy(() => import('./pages/ILPManagement'));
+// New ILP feature pages
+const CreateILP = lazy(() => import('./features/ilp/pages/CreateILPPage'));
+const EditILP = lazy(() => import('./features/ilp/pages/EditILPPage'));
+const AddGoal = lazy(() => import('./features/ilp/pages/AddGoalPage'));
+const EditGoal = lazy(() => import('./features/ilp/pages/EditGoalPage'));
 const AAC = lazy(() => import('./pages/AAC'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 const AdminRoutes = lazy(() => import('./routes/AdminRoutes'));
+const ILPDetailPage = lazy(() => import('./features/ilp/pages/ILPDetailPage'));
 
 // Lazy loading wrapper component with error boundary
 const LazyComponent = ({ children }: { children: React.ReactNode }) => (
@@ -106,6 +112,31 @@ export const App: React.FC = () => {
           <Route index element={
             <LazyComponent>
               <ILP />
+            </LazyComponent>
+          } />
+          <Route path="new" element={
+            <LazyComponent>
+              <CreateILP />
+            </LazyComponent>
+          } />
+          <Route path=":id" element={
+            <LazyComponent>
+              <ILPDetailPage />
+            </LazyComponent>
+          } />
+          <Route path=":id/edit" element={
+            <LazyComponent>
+              <EditILP />
+            </LazyComponent>
+          } />
+          <Route path=":ilpId/goals/new" element={
+            <LazyComponent>
+              <AddGoal />
+            </LazyComponent>
+          } />
+          <Route path=":ilpId/goals/:goalId/edit" element={
+            <LazyComponent>
+              <EditGoal />
             </LazyComponent>
           } />
           <Route path="management" element={

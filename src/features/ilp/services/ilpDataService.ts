@@ -1,4 +1,4 @@
-import { ILP, ILPGoal } from '../types';
+import { ILP, ILPGoal, ILPFormData, GoalFormData, GoalStatus, Skill, ActivityType } from '../types';
 
 // This service integrates with the existing backend API
 // Assuming there's an existing auth mechanism that provides tokens
@@ -71,4 +71,193 @@ export const fetchGoalsForILP = async (ilpId: string): Promise<ILPGoal[]> => {
   }
   
   return await response.json() as ILPGoal[];
+};
+
+/**
+ * Create a new ILP for a user
+ */
+export const createILP = async (userId: string, ilpData: ILPFormData): Promise<ILP> => {
+  const token = getUserAuthToken();
+  const response = await fetch(`${API_BASE_URL}/users/${userId}/ilps`, {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${token}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(ilpData)
+  });
+  
+  if (!response.ok) {
+    const error = await response.json().catch(() => ({ message: 'An error occurred' }));
+    throw new Error(error.message || `Failed to create ILP: ${response.statusText}`);
+  }
+  
+  return await response.json() as ILP;
+};
+
+/**
+ * Update an existing ILP
+ */
+export const updateILP = async (ilpId: string, ilpData: Partial<ILPFormData>): Promise<ILP> => {
+  const token = getUserAuthToken();
+  const response = await fetch(`${API_BASE_URL}/ilps/${ilpId}`, {
+    method: 'PATCH',
+    headers: {
+      'Authorization': `Bearer ${token}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(ilpData)
+  });
+  
+  if (!response.ok) {
+    const error = await response.json().catch(() => ({ message: 'An error occurred' }));
+    throw new Error(error.message || `Failed to update ILP: ${response.statusText}`);
+  }
+  
+  return await response.json() as ILP;
+};
+
+/**
+ * Delete an ILP
+ */
+export const deleteILP = async (ilpId: string): Promise<void> => {
+  const token = getUserAuthToken();
+  const response = await fetch(`${API_BASE_URL}/ilps/${ilpId}`, {
+    method: 'DELETE',
+    headers: {
+      'Authorization': `Bearer ${token}`,
+      'Content-Type': 'application/json'
+    }
+  });
+  
+  if (!response.ok) {
+    const error = await response.json().catch(() => ({ message: 'An error occurred' }));
+    throw new Error(error.message || `Failed to delete ILP: ${response.statusText}`);
+  }
+};
+
+/**
+ * Add a goal to an ILP
+ */
+export const addGoalToILP = async (ilpId: string, goalData: GoalFormData): Promise<ILPGoal> => {
+  const token = getUserAuthToken();
+  const response = await fetch(`${API_BASE_URL}/ilps/${ilpId}/goals`, {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${token}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(goalData)
+  });
+  
+  if (!response.ok) {
+    const error = await response.json().catch(() => ({ message: 'An error occurred' }));
+    throw new Error(error.message || `Failed to add goal: ${response.statusText}`);
+  }
+  
+  return await response.json() as ILPGoal;
+};
+
+/**
+ * Update a goal
+ */
+export const updateGoal = async (goalId: string, goalData: Partial<GoalFormData>): Promise<ILPGoal> => {
+  const token = getUserAuthToken();
+  const response = await fetch(`${API_BASE_URL}/goals/${goalId}`, {
+    method: 'PATCH',
+    headers: {
+      'Authorization': `Bearer ${token}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(goalData)
+  });
+  
+  if (!response.ok) {
+    const error = await response.json().catch(() => ({ message: 'An error occurred' }));
+    throw new Error(error.message || `Failed to update goal: ${response.statusText}`);
+  }
+  
+  return await response.json() as ILPGoal;
+};
+
+/**
+ * Delete a goal
+ */
+export const deleteGoal = async (goalId: string): Promise<void> => {
+  const token = getUserAuthToken();
+  const response = await fetch(`${API_BASE_URL}/goals/${goalId}`, {
+    method: 'DELETE',
+    headers: {
+      'Authorization': `Bearer ${token}`,
+      'Content-Type': 'application/json'
+    }
+  });
+  
+  if (!response.ok) {
+    const error = await response.json().catch(() => ({ message: 'An error occurred' }));
+    throw new Error(error.message || `Failed to delete goal: ${response.statusText}`);
+  }
+};
+
+/**
+ * Record activity completion for a goal and update progress
+ */
+export const recordActivityCompletionForGoal = async (
+  goalId: string, 
+  activityData: { 
+    activityId: string; 
+    activityType: ActivityType;
+    score?: number; // Optional score if the activity has scoring
+  }
+): Promise<ILPGoal> => {
+  const token = getUserAuthToken();
+  const response = await fetch(`${API_BASE_URL}/goals/${goalId}/activities`, {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${token}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      ...activityData,
+      completedAt: new Date().toISOString()
+    })
+  });
+  
+  if (!response.ok) {
+    const error = await response.json().catch(() => ({ message: 'An error occurred' }));
+    throw new Error(error.message || `Failed to record activity completion: ${response.statusText}`);
+  }
+  
+  return await response.json() as ILPGoal;
+};
+
+/**
+ * Update goal progress directly
+ */
+export const updateGoalProgress = async (
+  goalId: string, 
+  progressData: { 
+    progress?: number; 
+    assessmentNotes?: string;
+  }
+): Promise<ILPGoal> => {
+  const token = getUserAuthToken();
+  const response = await fetch(`${API_BASE_URL}/goals/${goalId}/progress`, {
+    method: 'PATCH',
+    headers: {
+      'Authorization': `Bearer ${token}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      ...progressData,
+      lastUpdated: new Date().toISOString()
+    })
+  });
+  
+  if (!response.ok) {
+    const error = await response.json().catch(() => ({ message: 'An error occurred' }));
+    throw new Error(error.message || `Failed to update goal progress: ${response.statusText}`);
+  }
+  
+  return await response.json() as ILPGoal;
 }; 

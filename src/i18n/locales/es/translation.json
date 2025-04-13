@@ -1,0 +1,106 @@
+{
+  "app": {
+    "title": "Ask123"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "quiz": "Cuestionario",
+    "memory": "Memoria",
+    "settings": "Configuración",
+    "dictionary": "Diccionario",
+    "feelings": "Control emocional",
+    "kids": "Gestionar niños",
+    "ilp": "PIA",
+    "ilpManagement": "Gestión de PIA",
+    "aac": "CAA"
+  },
+  "ilp": {
+    "title": "PIA - Plan Individual de Aprendizaje",
+    "management": "Gestión de PIA",
+    "what_is": "¿Qué es un PIA?",
+    "description": "Un Plan Individual de Aprendizaje (PIA) es un plan educativo personalizado diseñado para ayudar a los estudiantes a alcanzar objetivos específicos de aprendizaje. Define habilidades específicas, actividades de aprendizaje preferidas y registra el progreso hacia los objetivos.",
+    "features": "Características",
+    "features_list": {
+      "goals": "Crear objetivos de aprendizaje personalizados",
+      "track": "Seguir el progreso con indicadores visuales",
+      "recommendations": "Recibir recomendaciones de actividades basadas en objetivos",
+      "reports": "Generar informes de progreso",
+      "timeframes": "Establecer plazos para alcanzar objetivos"
+    },
+    "getting_started": "Primeros pasos",
+    "getting_started_list": {
+      "select_child": "Selecciona un niño desde el selector de niños",
+      "go_to_management": "Ve a la gestión de PIA",
+      "create_first": "Crea tu primer plan de aprendizaje",
+      "start_activities": "Inicia actividades recomendadas",
+      "monitor": "Monitoriza el progreso en el panel"
+    },
+    "create": "Crear nuevo plan",
+    "edit": "Editar plan",
+    "back": "Volver a planes",
+    "no_ilp": "Plan no encontrado",
+    "error": "Error",
+    "go_to_ilp_management": "Ir a gestión de PIA"
+  },
+  "goals": {
+    "title": "Objetivos",
+    "add": "Añadir objetivo",
+    "add_first": "Añade tu primer objetivo",
+    "edit": "Editar objetivo",
+    "no_goals": "Aún no se han añadido objetivos a este plan.",
+    "skill": "Habilidad",
+    "description": "Descripción",
+    "target_date": "Fecha objetivo",
+    "status": "Estado",
+    "progress": "Progreso",
+    "update_progress": "Actualizar progreso",
+    "save_progress": "Guardar progreso",
+    "saving": "Guardando...",
+    "cancel": "Cancelar",
+    "notes": "Notas de evaluación",
+    "last_updated": "Última actualización",
+    "preferred_activities": "Tipos de actividades preferidas",
+    "activities_for": "Actividades para el objetivo \"{0}\"",
+    "no_activities": "No hay actividades recomendadas actualmente.",
+    "completed": "¡Todas las actividades para este objetivo están completadas! 🎉",
+    "refresh": "Actualizar",
+    "list_view": "Vista de lista",
+    "dashboard": "Panel",
+    "overall_progress": "Progreso general",
+    "complete": "Completado",
+    "add_new": "Añadir nuevo objetivo",
+    "update": "Actualizar objetivo"
+  },
+  "activities": {
+    "start": "Iniciar actividad",
+    "recording": "Grabando...",
+    "skills": "Habilidades",
+    "completed": "{0} de {1} actividades completadas",
+    "try_again": "Intentar de nuevo"
+  },
+  "dashboard": {
+    "progress_by_skill": "Progreso por habilidad",
+    "status_distribution": "Distribución de estado de objetivos",
+    "not_enough_data": "No hay suficientes datos para mostrar gráficos. Añade más objetivos para ver visualizaciones.",
+    "average_progress": "Progreso promedio"
+  },
+  "status": {
+    "pending": "Pendiente",
+    "in_progress": "En progreso",
+    "completed": "Completado"
+  },
+  "form": {
+    "optional": "Opcional",
+    "submit": "Enviar",
+    "submitting": "Enviando..."
+  },
+  "skills": {
+    "reading": "Lectura",
+    "math": "Matemáticas",
+    "social": "Habilidades sociales",
+    "motor": "Habilidades motoras",
+    "language": "Lenguaje",
+    "cognitive": "Habilidades cognitivas",
+    "emotional": "Desarrollo emocional"
+  }
+} 

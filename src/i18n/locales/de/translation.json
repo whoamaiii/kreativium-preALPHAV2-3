@@ -1,0 +1,106 @@
+{
+  "app": {
+    "title": "Ask123"
+  },
+  "navigation": {
+    "home": "Startseite",
+    "quiz": "Quiz",
+    "memory": "Gedächtnis",
+    "settings": "Einstellungen",
+    "dictionary": "Wörterbuch",
+    "feelings": "Gefühlserfassung",
+    "kids": "Kinder verwalten",
+    "ilp": "ILP",
+    "ilpManagement": "ILP-Verwaltung",
+    "aac": "AAC"
+  },
+  "ilp": {
+    "title": "ILP - Individueller Lernplan",
+    "management": "ILP-Verwaltung",
+    "what_is": "Was ist ein ILP?",
+    "description": "Ein Individueller Lernplan (ILP) ist ein angepasster Bildungsplan, der entwickelt wurde, um Schülern beim Erreichen spezifischer Lernziele zu helfen. Er definiert gezielte Fähigkeiten, bevorzugte Lernaktivitäten und verfolgt den Fortschritt in Richtung der Ziele.",
+    "features": "Funktionen",
+    "features_list": {
+      "goals": "Erstellen Sie persönliche Lernziele",
+      "track": "Verfolgen Sie den Fortschritt mit visuellen Indikatoren",
+      "recommendations": "Erhalten Sie Aktivitätsempfehlungen basierend auf Zielen",
+      "reports": "Generieren Sie Fortschrittsberichte",
+      "timeframes": "Setzen Sie Zeitrahmen für die Zielerreichung"
+    },
+    "getting_started": "Erste Schritte",
+    "getting_started_list": {
+      "select_child": "Wählen Sie ein Kind aus der Kinderauswahl",
+      "go_to_management": "Gehen Sie zur ILP-Verwaltung",
+      "create_first": "Erstellen Sie Ihren ersten Lernplan",
+      "start_activities": "Starten Sie empfohlene Aktivitäten",
+      "monitor": "Überwachen Sie den Fortschritt im Dashboard"
+    },
+    "create": "Neuen Lernplan erstellen",
+    "edit": "Lernplan bearbeiten",
+    "back": "Zurück zu Lernplänen",
+    "no_ilp": "Lernplan nicht gefunden",
+    "error": "Fehler",
+    "go_to_ilp_management": "Zur ILP-Verwaltung gehen"
+  },
+  "goals": {
+    "title": "Ziele",
+    "add": "Ziel hinzufügen",
+    "add_first": "Fügen Sie Ihr erstes Ziel hinzu",
+    "edit": "Ziel bearbeiten",
+    "no_goals": "Diesem Lernplan wurden noch keine Ziele hinzugefügt.",
+    "skill": "Fähigkeit",
+    "description": "Beschreibung",
+    "target_date": "Zieldatum",
+    "status": "Status",
+    "progress": "Fortschritt",
+    "update_progress": "Fortschritt aktualisieren",
+    "save_progress": "Fortschritt speichern",
+    "saving": "Speichern...",
+    "cancel": "Abbrechen",
+    "notes": "Bewertungsnotizen",
+    "last_updated": "Zuletzt aktualisiert",
+    "preferred_activities": "Bevorzugte Aktivitätstypen",
+    "activities_for": "Aktivitäten für das \"{0}\"-Ziel",
+    "no_activities": "Derzeit keine Aktivitäten empfohlen.",
+    "completed": "Alle Aktivitäten für dieses Ziel sind abgeschlossen! 🎉",
+    "refresh": "Aktualisieren",
+    "list_view": "Listenansicht",
+    "dashboard": "Dashboard",
+    "overall_progress": "Gesamtfortschritt",
+    "complete": "Abgeschlossen",
+    "add_new": "Neues Ziel hinzufügen",
+    "update": "Ziel aktualisieren"
+  },
+  "activities": {
+    "start": "Aktivität starten",
+    "recording": "Aufnahme...",
+    "skills": "Fähigkeiten",
+    "completed": "{0} von {1} Aktivitäten abgeschlossen",
+    "try_again": "Erneut versuchen"
+  },
+  "dashboard": {
+    "progress_by_skill": "Fortschritt nach Fähigkeit",
+    "status_distribution": "Zielstatusverteilung",
+    "not_enough_data": "Nicht genügend Daten, um Diagramme anzuzeigen. Fügen Sie weitere Ziele hinzu, um Visualisierungen zu sehen.",
+    "average_progress": "Durchschnittlicher Fortschritt"
+  },
+  "status": {
+    "pending": "Ausstehend",
+    "in_progress": "In Bearbeitung",
+    "completed": "Abgeschlossen"
+  },
+  "form": {
+    "optional": "Optional",
+    "submit": "Absenden",
+    "submitting": "Wird abgesendet..."
+  },
+  "skills": {
+    "reading": "Lesen",
+    "math": "Mathematik",
+    "social": "Soziale Fähigkeiten",
+    "motor": "Motorische Fähigkeiten",
+    "language": "Sprache",
+    "cognitive": "Kognitive Fähigkeiten",
+    "emotional": "Emotionale Entwicklung"
+  }
+} 

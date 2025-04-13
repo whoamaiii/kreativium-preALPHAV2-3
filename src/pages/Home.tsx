@@ -27,7 +27,7 @@ const Home: React.FC = () => {
       bgGlow: 'before:bg-purple-500/20',
     },
     {
-      title: 'Feelings Tracker',
+      title: 'Følelseslogg',
       description: 'Track and visualize emotions',
       icon: Heart,
       color: 'text-red-500',
@@ -35,7 +35,7 @@ const Home: React.FC = () => {
       bgGlow: 'before:bg-red-500/20',
     },
     {
-      title: 'Kids',
+      title: 'Barn',
       description: 'Add and manage kids in the system',
       icon: Users,
       color: 'text-yellow-500',
@@ -43,7 +43,7 @@ const Home: React.FC = () => {
       bgGlow: 'before:bg-yellow-500/20',
     },
     {
-      title: 'ILP',
+      title: 'IOP',
       description: 'Individualized Learning Plan',
       icon: Target,
       color: 'text-green-500',

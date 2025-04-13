@@ -14,6 +14,38 @@ const getUserAuthToken = (): string => {
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '/api';
 
 /**
+ * Award XP to a user and return updated XP and level
+ */
+export const awardXP = async (
+  userId: string, 
+  xpAmount: number, 
+  eventType: XPEvent['type'],
+  metadata?: Record<string, unknown>
+): Promise<{ updatedXp: number; updatedLevel: number }> => {
+  const token = getUserAuthToken();
+  const response = await fetch(`${API_BASE_URL}/users/${userId}/award-xp`, {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${token}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ 
+      amount: xpAmount,
+      eventType,
+      metadata,
+      timestamp: new Date().toISOString()
+    }),
+  });
+  
+  if (!response.ok) {
+    const error = await response.json().catch(() => ({ message: 'An error occurred' }));
+    throw new Error(error.message || `Failed to award user XP: ${response.statusText}`);
+  }
+  
+  return await response.json();
+};
+
+/**
  * Update user XP and level
  */
 export const updateUserXP = async (userId: string, newXp: number, newLevel: number): Promise<void> => {

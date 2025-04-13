@@ -29,11 +29,6 @@ const Settings: React.FC = () => {
     addToast('Språk oppdatert', 'success');
   };
 
-  const handleDifficultyChange = (difficulty: 'easy' | 'medium' | 'hard') => {
-    updateSettings({ difficulty });
-    addToast('Vanskelighetsgrad oppdatert', 'success');
-  };
-
   return (
     <div className="space-y-6">
       <div>
@@ -127,30 +122,9 @@ const Settings: React.FC = () => {
             options={[
               { value: 'nb', label: 'Norsk' },
               { value: 'en', label: 'English' },
+              { value: 'es', label: 'Español' },
             ]}
           />
-        </Card>
-
-        {/* Difficulty Settings */}
-        <Card className="p-6 dark:bg-gray-800">
-          <div className="flex items-center gap-3 mb-4">
-            <Gauge className="w-5 h-5 text-purple-500" />
-            <h2 className="text-lg font-semibold dark:text-white">Vanskelighetsgrad</h2>
-          </div>
-
-          <div className="grid grid-cols-3 gap-2">
-            {['easy', 'medium', 'hard'].map((level) => (
-              <Button
-                key={level}
-                variant={settings.difficulty === level ? 'primary' : 'secondary'}
-                onClick={() => handleDifficultyChange(level as 'easy' | 'medium' | 'hard')}
-              >
-                {level === 'easy' && 'Lett'}
-                {level === 'medium' && 'Middels'}
-                {level === 'hard' && 'Vanskelig'}
-              </Button>
-            ))}
-          </div>
         </Card>
       </div>
     </div>

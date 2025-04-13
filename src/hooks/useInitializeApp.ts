@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useSettings } from './useSettings';
 import { useStats } from './useStats';
+import i18n from '../i18n';
 
 export function useInitializeApp() {
   const { settings } = useSettings();
@@ -20,7 +21,8 @@ export function useInitializeApp() {
       lastVisited: new Date().toISOString()
     }));
 
-    // Initialize i18n
-    document.documentElement.lang = settings.language;
-  }, [settings.theme, settings.language]);
+    // Force Norwegian language
+    i18n.changeLanguage('nb');
+    document.documentElement.lang = 'nb';
+  }, [settings.theme]);
 }
